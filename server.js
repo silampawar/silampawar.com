@@ -16,6 +16,7 @@ var moment = require('moment');
 var request = require('request');
 var webpack = require('webpack');
 var config = require('./webpack.config');
+var favicon = require('serve-favicon');
 
 // Load environment variables from .env file
 dotenv.load();
@@ -46,6 +47,7 @@ mongoose.connection.on('error', function() {
 });
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.set('port', process.env.PORT || 3000);
 app.use(compression());
 app.use(logger('dev'));

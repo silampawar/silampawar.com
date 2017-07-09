@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #f4f4f4;;
+ /* background-color: #f4f4f4;; */
   margin-bottom: 44px;
   line-height: 1.57142857;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -67,40 +67,66 @@ footer {
 /* Navbar
 /* ------------------------- */
 
-.navbar-default {
-  background-color: #fff;
-  border-color: #e0e0e0;
+
+.navbar {
+  margin-bottom: 0px !important;
+}
+.navbar-brand{
+  color: #07eefe !important;
+  font-size: 26px;
+  font-weight: bold;
+ 
 }
 
-.navbar-default .navbar-nav {
-  color: #757575;
+.navbar-brand :hover{
+  color: #fff;
 }
 
-.navbar-default .navbar-nav > li > a {
-  color: #262626;
+.header-back {
+ background-color: #000;
+ height: 250px;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+.navbar-inverse {
+  background-color: #000
+}
+.navbar-inverse .navbar-nav {
+  color: white;  
+  background-color: #000
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
   border-bottom: 3px solid transparent;
   padding-top: 17.5px;
   padding-bottom: 14.5px;
   transition: all 0.25s;
+  font-weight: bold;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-inverse .navbar-nav > li > a:hover {
   background-color: transparent;;
-  border-bottom-color: #bdbdbd;
+  border-bottom-color: #fff;
+  color: #07eefe;
 }
 
-.navbar-default .navbar-nav > li > a.navbar-avatar {
+.navbar-inverse .navbar-nav > li > a.navbar-avatar {
   padding-top: 13px;
   padding-bottom: 10px;
 }
 
-.navbar-default .navbar-nav > li > a.navbar-avatar img {
+.navbar-inverse .navbar-nav > li > a.navbar-avatar img {
   border-radius: 50%;
   width: 30px;
   height: 30px;
 }
 
-.navbar-default .navbar-nav > li.active > a {
+.navbar-inverse .navbar-nav > li.active > a {
   border-bottom-color: #3f51b5;
   background-color: transparent;
   color: #262626;
@@ -110,7 +136,7 @@ footer {
 /* ------------------------- */
 
 .panel {
-  border: solid 1px rgba(160, 160, 160, 0.3);
+  /*border: solid 1px rgba(160, 160, 160, 0.3);*/
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -128,6 +154,8 @@ footer {
 
 .panel-body h3 {
   margin-top: 0;
+  color: #2095f2;
+  font-weight: 300;
 }
 
 .panel-title {
@@ -280,4 +308,118 @@ textarea {
   border-radius: 2px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+/*Silam entered */
+
+.heading-new-line {
+    display: block;
+}
+
+.section .section-title {
+    margin-bottom: 60px;
+}
+
+.landing-header {
+    font-size: 40px;
+    font-weight: 100;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: transparent;
+    transition: color 0.5s;
+   
+}
+
+/*Animation display for a name */
+/* GLOBAL STYLES */
+
+
+/* DEMO-SPECIFIC STYLES */
+
+.typewriter{
+  width: 539px;
+  align-self: center;
+  padding-bottom: 50px;
+}
+.typewriter h1 {
+   font-family: 'Sacramento', cursive; 
+  font-size:80px; 
+  margin: 10px 50px; 
+  font-weight: bold;
+   color: #07eefe;
+   text-align: center;
+}
+.typewriter h2 {
+  
+  font-size:20px; 
+  margin: 10px 50px; 
+  font-weight: 200;
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+ /* letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5s steps(30, end),
+    blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+/*Recent View Section*/
+
+.recentSection{
+padding-top: 70px;
+padding-bottom: 70px; 
+}
+
+.section-title{
+  font-size: 45px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  vertical-align: top;
+}
+
+.title-view-more-link {
+    display: 'inline-block';
+    opacity: 0.5;
+    color: #232323;
+    transition: opacity 0.5s;
+    font-weight: 100;
+    font-size: 20px;
+    position: absolute;
+    margin: 20px;
+}
+
+.viba-portfolio-overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+.midPadding{
+  padding-top:30px;
+  padding-bottom:30px;
 }
