@@ -9,13 +9,18 @@ html {
 }
 
 body {
- /* background-color: #f4f4f4;; */
+  /* background-color: #f4f4f4;; */
   margin-bottom: 44px;
   line-height: 1.57142857;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
 }
 
@@ -30,7 +35,7 @@ a:hover {
 footer {
   position: absolute;
   width: 100%;
-  height: 44px;
+ 
   padding: 10px 30px;
   bottom: 0;
   background-color: #fff;
@@ -40,6 +45,8 @@ footer {
 .login-container {
   max-width: 555px;
 }
+
+
 
 /* Alerts
 /* ------------------------- */
@@ -64,43 +71,42 @@ footer {
   border-color: #b61b17;
 }
 
+.header-back {
+  background-color: #000;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
 /* Navbar
 /* ------------------------- */
-
 
 .navbar {
   margin-bottom: 0px !important;
 }
-.navbar-brand{
+
+.navbar-brand {
   color: #07eefe !important;
   font-size: 26px;
   font-weight: bold;
- 
 }
 
-.navbar-brand :hover{
+.navbar-brand :hover {
   color: #fff;
-}
-
-.header-back {
- background-color: #000;
- height: 250px;
- 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
 }
 
 .navbar-inverse {
   background-color: #000
 }
+
 .navbar-inverse .navbar-nav {
-  color: white;  
+  color: white;
   background-color: #000
 }
 
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav>li>a {
   color: white;
   border-bottom: 3px solid transparent;
   padding-top: 17.5px;
@@ -109,28 +115,30 @@ footer {
   font-weight: bold;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover {
-  background-color: transparent;;
+.navbar-inverse .navbar-nav>li>a:hover {
+  background-color: transparent;
+  ;
   border-bottom-color: #fff;
   color: #07eefe;
 }
 
-.navbar-inverse .navbar-nav > li > a.navbar-avatar {
+.navbar-inverse .navbar-nav>li>a.navbar-avatar {
   padding-top: 13px;
   padding-bottom: 10px;
 }
 
-.navbar-inverse .navbar-nav > li > a.navbar-avatar img {
+.navbar-inverse .navbar-nav>li>a.navbar-avatar img {
   border-radius: 50%;
   width: 30px;
   height: 30px;
 }
 
-.navbar-inverse .navbar-nav > li.active > a {
+.navbar-inverse .navbar-nav>li.active>a {
   border-bottom-color: #3f51b5;
   background-color: transparent;
   color: #262626;
 }
+
 
 /* Panels
 /* ------------------------- */
@@ -144,7 +152,7 @@ footer {
   padding: 20px 30px;
 }
 
-.panel-heading + .panel-body {
+.panel-heading+.panel-body {
   padding-top: 0;
 }
 
@@ -163,10 +171,11 @@ footer {
   color: #424242;
 }
 
+
 /* Buttons
 /* ------------------------- */
 
-.btn-toolbar > .btn {
+.btn-toolbar>.btn {
   float: none;
   margin-bottom: 5px;
 }
@@ -270,7 +279,10 @@ footer {
   color: #fff;
 }
 
+
 /* Forms */
+
+
 /* ------------------------- */
 
 textarea {
@@ -285,7 +297,7 @@ textarea {
   box-shadow: inset 0 1px 2px rgba(150, 160, 175, 0.1), inset 0 1px 15px rgba(150, 160, 175, 0.05);
 }
 
-.form-group > label {
+.form-group>label {
   text-transform: uppercase;
   font-size: 13px;
 }
@@ -310,87 +322,108 @@ textarea {
   text-transform: uppercase;
 }
 
+
 /*Silam entered */
 
 .heading-new-line {
-    display: block;
+  display: block;
 }
 
 .section .section-title {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .landing-header {
-    font-size: 40px;
-    font-weight: 100;
-    padding-top: 50px;
-    padding-bottom: 50px;
+  font-size: 40px;
+  font-weight: 100;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: white;
-    background-color: transparent;
-    transition: color 0.5s;
-   
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+  color: white;
+  background-color: transparent;
+  transition: color 0.5s;
 }
+
 
 /*Animation display for a name */
+
+
 /* GLOBAL STYLES */
 
 
 /* DEMO-SPECIFIC STYLES */
 
-.typewriter{
+.typewriter {
   width: 539px;
   align-self: center;
   padding-bottom: 50px;
 }
+
 .typewriter h1 {
-   font-family: 'Sacramento', cursive; 
-  font-size:80px; 
-  margin: 10px 50px; 
+  font-family: 'Sacramento', cursive;
+  font-size: 80px;
+  margin: 10px 50px;
   font-weight: bold;
-   color: #07eefe;
-   text-align: center;
+  color: #07eefe;
+  text-align: center;
 }
+
 .typewriter h2 {
-  
-  font-size:20px; 
-  margin: 10px 50px; 
+  font-size: 20px;
+  margin: 10px 50px;
   font-weight: 200;
   color: #fff;
   font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
- /* letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 5s steps(30, end),
-    blink-caret 1s step-end infinite;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  /* letter-spacing: .15em; /* Adjust as needed */
+  animation: typing 5s steps(30, end), blink-caret 1s step-end infinite;
 }
+
 
 /* The typing effect */
+
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
 }
 
+
 /* The typewriter cursor effect */
+
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white }
+  from,
+  to {
+    border-color: transparent
+  }
+  50% {
+    border-color: white
+  }
 }
+
 
 /*Recent View Section*/
 
-.recentSection{
-padding-top: 70px;
-padding-bottom: 70px; 
+.recentSection {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
-.section-title{
+.section-title {
   font-size: 45px;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
@@ -398,28 +431,203 @@ padding-bottom: 70px;
 }
 
 .title-view-more-link {
-    display: 'inline-block';
-    opacity: 0.5;
-    color: #232323;
-    transition: opacity 0.5s;
-    font-weight: 100;
-    font-size: 20px;
-    position: absolute;
-    margin: 20px;
+  display: 'inline-block';
+  opacity: 0.5;
+  color: #232323;
+  transition: opacity 0.5s;
+  font-weight: 100;
+  font-size: 20px;
+  position: absolute;
+  margin: 20px;
 }
 
 .viba-portfolio-overlay {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
-    transition: opacity 0.4s, transform 0.4s;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
+  transition: opacity 0.4s, transform 0.4s;
 }
 
-.midPadding{
-  padding-top:30px;
-  padding-bottom:30px;
+.midPadding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.recentWorkButton {
+  width: 180px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.card-deck {
+  width: 100%;
+}
+
+
+/*Portfolio*/
+
+.viba-portfolio-single-meta,
+.viba-portfolio-single-content .viba-portfolio-single-meta a {
+  color: #999;
+  text-decoration: none;
+}
+
+.section-light {
+  background-color: #f6f6f6;
+  color: #232323;
+}
+
+.viba-portfolio-single-project-link {
+  margin-top: 20px;
+}
+
+.viba-portfolio-share-icons {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.viba-portfolio-single-item {
+  float: none;
+  display: block;
+  width: 100%;
+}
+
+.viba-portfolio-entry-title {
+  margin-bottom: 40px;
+}
+
+.entry-title {
+  margin-top: 5px;
+  margin-bottom: 60px;
+}
+
+.vp-js .viba-portfolio-single-thumbnail img {
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+  opacity: 0;
+}
+
+.floatLeft {
+  float: left
+}
+
+.floatRight {
+  float: right
+}
+
+.paddingLeft {
+  padding-left: 30px
+}
+
+.viba-portfolio-single-item .viba-portfolio-single-content .viba-portfolio-single-meta h3 {
+  font-size: 1em;
+  line-height: 1em;
+  color: #333;
+  font-weight: normal;
+  margin: 20px 0 5px 0;
+  padding: 0;
+}
+
+.viba-portfolio-entry-title {
+  margin-bottom: 40px;
+  margin-top: 50px;
+  font-size: 45px;
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.viba-portfolio-single-meta, .viba-portfolio-single-content .viba-portfolio-single-meta a {
+    color: #999;
+    text-decoration: none;
+}
+
+.vp-single-meta .viba-portfolio-single-tags ul li{
+  list-style: none !important
+}
+.vp-single-meta .viba-portfolio-single-categories ul li{
+  list-style: none !important
+}
+
+.viba-portfolio-single-item .viba-portfolio-single-project-link a {
+    display: inline-block;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.viba-portfolio-share-icons ul li {
+    float: left;
+    margin: 0 -1px 10px 0;
+    padding: 0;
+    list-style: none !important;
+    background: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ul{
+  list-style:none;
+}
+.viba-portfolio-single-meta .viba-portfolio-share {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    color: #bbb;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.viba-portfolio-single-meta .viba-portfolio-share {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    color: #bbb;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.viba-portfolio-single-meta .vp-share-facebook:hover {
+    color: #fff;
+    background: #3b5998;
+    border-color: #3b5998;
+}
+
+.footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
 }

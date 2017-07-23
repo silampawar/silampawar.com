@@ -18,6 +18,8 @@ var webpack = require('webpack');
 var config = require('./webpack.config');
 var favicon = require('serve-favicon');
 
+var rwController = require('./controllers/RWController');
+
 // Load environment variables from .env file
 dotenv.load();
 
@@ -27,6 +29,7 @@ require('babel-polyfill');
 
 // Models
 var User = require('./models/User');
+var RecentWork = require('./models/RecentWork');
 
 // Controllers
 var userController = require('./controllers/user');
@@ -58,6 +61,26 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(function(req, res, next) {
+
+
+  var rwNew = RecentWork();
+//  RecentWork.findOne({ workTitle: 'Sample One' }).remove().exec();
+//  RecentWork.findOne({ workTitle: 'New Project One' }).remove().exec();
+
+
+  //rwNew.remove({},()=>console.log('All Work deleted'));
+  rwNew.imgSrc = 'img1.jpeg';
+   rwNew.mainImageSrc = 'sample.png';
+    rwNew.workTitle = 'Reaction Timer';
+    rwNew.description = 'This simple little Reaction Timer is a fun little proof of concept to test your reaction speed by timing how long it takes for you to click a button when randomly prompted. This was built in JS/HTML/CSS and was produced to simply recreate a game I had once played before. You can view an online demo over at: <a href= "http://aaronvanston.github.io/Reaction-Timer/">here</a></a>';
+    rwNew.urlWebsite = 'www.google.com';
+    rwNew.urlGitHub = 'www.github.com';
+    rwNew.DEL_FLAG = 'N';
+     rwNew.tags = 'ReactJS, NodeJS, HTML, CSS, MongoDB';
+     rwNew.uploadedDate = new Date();
+rwNew.save();
+
+
   req.isAuthenticated = function() {
     var token = (req.headers.authorization && req.headers.authorization.split(' ')[1]) || req.cookies.token;
     try {
@@ -100,6 +123,9 @@ app.post('/auth/twitter', userController.authTwitter);
 app.get('/auth/twitter/callback', userController.authTwitterCallback);
 app.post('/auth/github', userController.authGithub);
 app.get('/auth/github/callback', userController.authGithubCallback);
+/*added for recent work*/
+app.get('/getAllWork', rwController.findAll);
+app.get('/getAllWork/:id', rwController.findById);
 
 // React server rendering
 app.use(function(req, res) {
@@ -107,7 +133,6 @@ app.use(function(req, res) {
     auth: { token: req.cookies.token, user: req.user },
     messages: {}
   };
-
   var store = configureStore(initialState);
 
   Router.match({ routes: routes.default(store), location: req.url }, function(err, redirectLocation, renderProps) {

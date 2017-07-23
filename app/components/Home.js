@@ -1,11 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import Messages from './Messages';
+import recentWork from '../actions/recentWork';
+
 import HomeRecentWork from './HomeRecentWork';
 
+import { bindActionCreators } from 'redux';
+
 class Home extends React.Component {
+
+  componentDidMount(){
+   
+   this.props.recentWork();
+   this.setState({ RecentWorkList : this.props.RecentWorkList});
+  }
+
   render() {
-    console.log(HomeRecentWork);
+
     return (
       <div className="container">
         <Messages messages={this.props.messages} />
@@ -52,7 +63,7 @@ class Home extends React.Component {
           </div>
         </div>
         <div className="midPadding"></div>
-        <div><HomeRecentWork heading="Work" pathTo="https://google.com" bgColor="#faf5f5"/></div>
+        <div><HomeRecentWork heading="Work" dataList = {this.props.RecentWorkList} pathTo="https://google.com" bgColor="#faf5f5"/></div>
         <div className="midPadding"></div>
          <div><HomeRecentWork heading="Articles" pathTo="https://google.com" bgColor="#fff"/></div>
       </div>
@@ -63,8 +74,17 @@ class Home extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    messages: state.messages
+    messages: state.messages,
+    RecentWorkList: state.RecentWork,
+  
   };
 };
 
-export default connect(mapStateToProps)(Home);
+//export default connect(mapStateToProps)(Home);
+
+function mapDispatchtoProps(dispatch) {
+  return bindActionCreators({ recentWork }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchtoProps)(Home);
+
