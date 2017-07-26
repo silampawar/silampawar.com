@@ -144,7 +144,7 @@ app.use(function(req, res) {
       var html = ReactDOM.renderToString(React.createElement(Provider, { store: store },
         React.createElement(Router.RouterContext, renderProps)
       ));
-      res.render('layout', {
+      res.render('layout', { title:'SilamPawar',
         html: html,
         initialState: store.getState()
       });
