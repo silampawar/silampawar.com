@@ -14,7 +14,7 @@ class Header extends React.Component {
     const active = { borderBottomColor: '#3f51b5' };
     const mainName = (
       <div className="typewriter">
-        <h1>Silam Pawar</h1>
+        <h1>Silam <span>Pawar</span></h1>
         <h2>NodeJS  |  ReactJS | HTML | CSS and much more ....</h2>
       </div>
     );
@@ -36,7 +36,7 @@ class Header extends React.Component {
   <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
-  <IndexLink to="/" className="navbar-brand">SP</IndexLink>
+  <IndexLink to="/" className="navbar-brand"><span>S</span>P</IndexLink>
 
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav mr-auto">
@@ -48,7 +48,7 @@ class Header extends React.Component {
         <a className="nav-link" href="#">Post</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Portfolio</a>
+        <IndexLink to="/portfolio" className="nav-link" activeStyle={active}>Portfolio</IndexLink>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">Contact</a>

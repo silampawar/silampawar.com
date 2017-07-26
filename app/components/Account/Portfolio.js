@@ -4,10 +4,9 @@ import _ from 'lodash';
 import Moment from 'react-moment';
 import { recentWorkDetails } from '../../actions/recentWork';
 import { bindActionCreators } from 'redux';
-
 import { browserHistory } from 'react-router';
-
 import PortfolioTag from './PortfolioTag';
+
 
 class Portfolio extends React.Component {
 

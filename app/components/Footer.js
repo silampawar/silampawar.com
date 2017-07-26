@@ -1,4 +1,5 @@
 import React from 'react';
+import { IndexLink, Link } from 'react-router';
 
 class Footer extends React.Component {
   render() {
@@ -10,11 +11,11 @@ class Footer extends React.Component {
 				<h3>Silam <span>Pawar</span></h3>
 
 				<p className="footer-links">
-					<a href="#">Home</a>
+					<IndexLink to="/">Home</IndexLink>
 					·
 					<a href="#">Post</a>
 					·
-					<a href="#">Portfolio</a>
+					 <IndexLink to="/portfolio">Portfolio</IndexLink>
 					·
 					<a href="#">Contact</a>
 					·

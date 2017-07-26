@@ -90,7 +90,12 @@ footer {
 .navbar-brand {
   color: #07eefe !important;
   font-size: 26px;
-  font-weight: bold;
+  font-weight: 200;
+}
+
+.navbar-brand span{
+  color: #FFF !important;
+  
 }
 
 .navbar-brand :hover {
@@ -364,12 +369,25 @@ textarea {
 }
 
 .typewriter h1 {
-  font-family: 'Sacramento', cursive;
+     font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    font-stretch: normal;
+   
+    line-height: normal;
+    font-family: 'Cookie', cursive;
+
   font-size: 80px;
   margin: 10px 50px;
-  font-weight: bold;
-  color: #07eefe;
+  font-weight: 200;
+  color: #fff;
   text-align: center;
+}
+
+.typewriter h1 span{
+  color: #07eefe;
 }
 
 .typewriter h2 {
