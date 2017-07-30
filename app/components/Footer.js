@@ -11,15 +11,15 @@ class Footer extends React.Component {
 				<h3>Silam <span>Pawar</span></h3>
 
 				<p className="footer-links">
-					<IndexLink to="/">Home</IndexLink>
-					·
-					<a href="#">Post</a>
-					·
-					 <IndexLink to="/portfolio">Portfolio</IndexLink>
-					·
-					<a href="#">Contact</a>
-					·
-					<a href="#">Resume</a>
+					<IndexLink to="/"> Home </IndexLink>
+					/
+					<a href="#"> Post </a>
+					/
+					 <IndexLink to="/portfolio"> Portfolio </IndexLink>
+					/
+					<a href="#"> Contact </a>
+					/
+					 <IndexLink to="/resume"> Resume </IndexLink>
 				</p>
 
 				<p className="footer-company-name">Silam Pawar &copy; 2017</p>

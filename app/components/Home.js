@@ -4,6 +4,7 @@ import Messages from './Messages';
 import recentWork from '../actions/recentWork';
 import { IndexLink, Link } from 'react-router'; 
 import HomeRecentWork from './HomeRecentWork';
+import HeaderBack from './HeaderBack';
 
 import { bindActionCreators } from 'redux';
 
@@ -17,7 +18,7 @@ class Home extends React.Component {
 
   render() {
 
-    return (
+    return (<div><HeaderBack/>
       <div className="container">
         <Messages messages={this.props.messages} />
         <div className="row pad-top-15">
@@ -97,7 +98,7 @@ class Home extends React.Component {
           </div>
         </div>
       </div>
-      
+      </div>
 
     );
   }

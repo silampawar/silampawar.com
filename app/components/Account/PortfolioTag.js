@@ -8,7 +8,7 @@ export default class PortfolioTag extends React.Component {
         const profileImage = `/images/recentwork/portfolio_Images/${projDetails.mainImageSrc}`;
          
         return (
-            <div>   
+          <div className="paddingTop">   
                 <main id="main" className="site-main" role="main">
                     <section className="section section-light section-md section-article">
                         <div className="container">

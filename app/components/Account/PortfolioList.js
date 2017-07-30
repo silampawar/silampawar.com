@@ -16,9 +16,11 @@ class PortfolioList extends React.Component {
   render() {
 
     return (
+      <div className="paddingTop">
       <div className="container">
         <h1 className="section-title landing-header">Portfolio</h1>
           <HomeRecentWork dataList={this.props.RecentWorkList} />
+      </div>
       </div>
     );
   }

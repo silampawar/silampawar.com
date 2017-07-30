@@ -34,12 +34,12 @@ exports.contactPost = function(req, res) {
 
   var mailOptions = {
     from: req.body.name + ' ' + '<'+ req.body.email + '>',
-    to: 'your@email.com',
-    subject: '✔ Contact Form | Mega Boilerplate',
+    to: 'silampawar@gmail.com',
+    subject: '✔ Contact Form | SilamPawar.com',
     text: req.body.message
   };
 
   transporter.sendMail(mailOptions, function(err) {
-    res.send({ msg: 'Thank you! Your feedback has been submitted.' });
+    res.send({ msg: 'Thank you! Your message has been submitted.' });
   });
 };

@@ -3,6 +3,7 @@ import { IndexLink, Link } from 'react-router';
 import { connect } from 'react-redux'
 import { logout } from '../actions/auth';
 
+
 class Header extends React.Component {
   /**/
   handleLogout(event) {
@@ -13,25 +14,24 @@ class Header extends React.Component {
   render() {
     const active = { borderBottomColor: '#3f51b5' };
     const mainName = (
+      <div className="header-back">
       <div className="typewriter">
         <h1>Silam <span>Pawar</span></h1>
         <h2>NodeJS  |  ReactJS | HTML | CSS and much more ....</h2>
       </div>
+       </div>
     );
     const rightNav = (
       <ul className="navbar-nav mr-auto">
         <li className="nav-item active"><IndexLink to="/" activeStyle={active}>Home</IndexLink></li>
         <li className="nav-item"><Link to="/" activeStyle={active}>Posts</Link></li>
-        <li className="nav-item"><Link to="/" activeStyle={active}>Portfolio</Link></li>
-        <li className="nav-item"><Link to="/" activeStyle={active}>Contact</Link></li>
+        <li className="nav-item"><Link to="/portfolio" activeStyle={active}>Portfolio</Link></li>
+        <li className="nav-item"><Link to="/contact" activeStyle={active}>Contact</Link></li>
         <li className="nav-item"><Link to="/" activeStyle={active}>Resume</Link></li>
       </ul>
     );
     return (
      <div>
-       <div className="header-back">
-        {mainName}
-        </div>
       <nav className="navbar navbar-toggleable-md navbar-inverse fixed-top">
   <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
@@ -48,13 +48,13 @@ class Header extends React.Component {
         <a className="nav-link" href="#">Post</a>
       </li>
       <li className="nav-item">
-        <IndexLink to="/portfolio" className="nav-link" activeStyle={active}>Portfolio</IndexLink>
+        <IndexLink to="/portfolio" className="nav-link" >Portfolio</IndexLink>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Contact</a>
+         <IndexLink to="/contact" className="nav-link">Contact</IndexLink>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Resume</a>
+        <IndexLink to="/resume" className="nav-link">Resume</IndexLink>
       </li>
     </ul>
    

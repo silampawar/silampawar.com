@@ -10,7 +10,9 @@ import Profile from './components/Account/Profile';
 import Forgot from './components/Account/Forgot';
 import Reset from './components/Account/Reset';
 import Portfolio from './components/Account/Portfolio';
-import PortfolioList from './components/Account/PortfolioList'
+import PortfolioList from './components/Account/PortfolioList';
+import Resume from './components/Account/Resume';
+
 
 export default function getRoutes(store) {
   const ensureAuthenticated = (nextState, replace) => {
@@ -39,6 +41,8 @@ export default function getRoutes(store) {
       <Route path='/reset/:token' component={Reset} onEnter={skipIfAuthenticated} onLeave={clearMessages}/>
        <Route path='/portfolio' component={PortfolioList} />
       <Route path='/portfolio/:id' component={Portfolio} />
+      <Route path='/resume' component={Resume} />
+    
       <Route path="*" component={NotFound} onLeave={clearMessages}/>
     </Route>
   );
