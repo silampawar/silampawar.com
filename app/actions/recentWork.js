@@ -33,3 +33,21 @@ export function recentWorkDetails(id) {
     };
 }
 
+
+export function recentPost() {
+    const url = '/getAllPost';
+    let request = axios.get(url);
+    if (!request) {
+        request = {
+            data: {
+                data: null
+            }
+        };
+    }
+    return {
+        type: 'RECENT_POST',
+        payload: request,
+    };
+}
+
+

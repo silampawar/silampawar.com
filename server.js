@@ -19,7 +19,7 @@ var config = require('./webpack.config');
 var favicon = require('serve-favicon');
 
 var rwController = require('./controllers/RWController');
-
+var rpController = require('./controllers/RPController');
 // Load environment variables from .env file
 dotenv.load();
 
@@ -30,6 +30,7 @@ require('babel-polyfill');
 // Models
 var User = require('./models/User');
 var RecentWork = require('./models/RecentWork');
+var RecentPost = require('./models/RecentPost');
 
 // Controllers
 var userController = require('./controllers/user');
@@ -69,16 +70,20 @@ app.use(function(req, res, next) {
 
 
   //rwNew.remove({},()=>console.log('All Work deleted'));
-  rwNew.imgSrc = 'img1.jpeg';
+ rwNew.imgSrc = 'img1.jpeg';
    rwNew.mainImageSrc = 'sample.png';
     rwNew.workTitle = 'SilamPawar.com is live';
     rwNew.description = 'This simple little Reaction Timer is a fun little proof of concept to test your reaction speed by timing how long it takes for you to click a button when randomly prompted. This was built in JS/HTML/CSS and was produced to simply recreate a game I had once played before. You can view an online demo over at: <a href= "http://aaronvanston.github.io/Reaction-Timer/">here</a></a>';
     rwNew.urlWebsite = 'www.google.com';
     rwNew.urlGitHub = 'www.github.com';
+ //   rwNew.url="https://medium.com/the-node-js-collection/node-js-performance-monitoring-with-prometheus-c3d50c2d5608"
+   // rwNew.postTitle = "Node.js Performance Monitoring with Prometheus";
     rwNew.DEL_FLAG = 'N';
-     rwNew.tags = 'ReactJS, NodeJS, HTML, CSS, MongoDB';
+     rwNew.tags = 'Node JS, React JS';
      rwNew.uploadedDate = new Date();
 rwNew.save();
+
+  
 
 
   req.isAuthenticated = function() {
@@ -126,6 +131,9 @@ app.get('/auth/github/callback', userController.authGithubCallback);
 /*added for recent work*/
 app.get('/getAllWork', rwController.findAll);
 app.get('/getAllWork/:id', rwController.findById);
+
+app.get('/getAllPost', rpController.findAll);
+
 
 // React server rendering
 app.use(function(req, res) {

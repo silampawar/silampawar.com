@@ -446,7 +446,7 @@ textarea {
 
 .recentSection {
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 
 .section-title {
@@ -704,3 +704,25 @@ ul{
   textarea.form-control {
     height: auto;
 }
+
+.article-time {
+    opacity: 0.6;
+    transition: opacity 0.2s;
+    font-size: 95%;
+    padding-bottom: 7px;
+    padding-top: 15px;
+  }
+
+.list-group-item {
+  border: none;
+}
+
+
+.list-group-item-action:focus, .list-group-item-action {
+  color: #2095f2;;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+  color: #014c8c;
+}
+

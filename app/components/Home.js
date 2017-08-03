@@ -1,9 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import Messages from './Messages';
-import recentWork from '../actions/recentWork';
+import recentWork, {recentPost} from '../actions/recentWork';
+
 import { IndexLink, Link } from 'react-router'; 
 import HomeRecentWork from './HomeRecentWork';
+import HomeRecentPost from './HomeRecentPost';
 import HeaderBack from './HeaderBack';
 
 import { bindActionCreators } from 'redux';
@@ -13,7 +15,12 @@ class Home extends React.Component {
   componentDidMount() {
 
     this.props.recentWork();
-    this.setState({ RecentWorkList: this.props.RecentWorkList });
+     this.setState({ RecentWorkList: this.props.RecentWorkList
+     });
+    this.props.recentPost();
+    this.setState({ 
+      RecentPostList: this.props.RecentPostList,
+     });
   }
 
   render() {
@@ -82,7 +89,7 @@ class Home extends React.Component {
         </div>
 
 
-        <div className="midPadding"></div>
+       
         <div className="row">
           <div className="recentSection" style={{ backgroundColor: "#fff" }}>
             <div className="section-title">Recent Posts
@@ -92,7 +99,7 @@ class Home extends React.Component {
             <div className="container">
               <div className="row">
                 <div className="card-deck"></div>
-                Coming Soon !!!
+                   <HomeRecentPost postList={this.props.RecentPostList} />
                 </div>
             </div>
           </div>
@@ -108,6 +115,7 @@ const mapStateToProps = (state) => {
   return {
     messages: state.messages,
     RecentWorkList: state.RecentWork,
+    RecentPostList: state.RecentPost,
 
   };
 };
@@ -115,7 +123,7 @@ const mapStateToProps = (state) => {
 //export default connect(mapStateToProps)(Home);
 
 function mapDispatchtoProps(dispatch) {
-  return bindActionCreators({ recentWork }, dispatch);
+  return bindActionCreators({ recentWork, recentPost }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchtoProps)(Home);

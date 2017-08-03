@@ -1,7 +1,7 @@
 import _ from 'lodash'
 
 export default function RecentWork(state = {}, action) {
-  console.log('Action: ' + action.type + '  Action Payload:' + action.payload);
+
   switch (action.type) {
     case 'RECENT_WORK': {
       if (checkValue(action.payload) &&
@@ -22,6 +22,7 @@ export default function RecentWork(state = {}, action) {
           return null;
       }
 
+      
   }
   return state;
 };
