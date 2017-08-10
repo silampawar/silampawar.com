@@ -25,7 +25,8 @@ class Home extends React.Component {
 
   render() {
 
-    return (<div><HeaderBack/>
+    return (<div>
+      <HeaderBack/>
       <div className="container">
         <Messages messages={this.props.messages} />
         <div className="row pad-top-15">
@@ -78,13 +79,12 @@ class Home extends React.Component {
                 <IndexLink to="/portfolio" className="title-view-more-link"> - View more</IndexLink>
               </small>
             </div>
-            <div className="container">
-              <div className="row">
-                <div className="card-deck">
+           
+        
+               
                   <HomeRecentWork dataList={this.props.RecentWorkList} />
-                </div>
-              </div>
-            </div>
+                
+           
           </div>
         </div>
 
@@ -93,7 +93,7 @@ class Home extends React.Component {
         <div className="row">
           <div className="recentSection" style={{ backgroundColor: "#fff" }}>
             <div className="section-title">Recent Posts
-                    <small><a href="/" className="title-view-more-link"> - View more</a>
+                    <small><IndexLink to="/post" className="title-view-more-link"> - View more</IndexLink>
               </small>
             </div>
             <div className="container">
@@ -104,6 +104,8 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
+
+<div className="paddingBot"></div>
       </div>
       </div>
 

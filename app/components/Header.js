@@ -24,10 +24,10 @@ class Header extends React.Component {
     const rightNav = (
       <ul className="navbar-nav mr-auto">
         <li className="nav-item active"><IndexLink to="/" activeStyle={active}>Home</IndexLink></li>
-        <li className="nav-item"><Link to="/" activeStyle={active}>Posts</Link></li>
+        <li className="nav-item"><Link to="/post" activeStyle={active}>Posts</Link></li>
         <li className="nav-item"><Link to="/portfolio" activeStyle={active}>Portfolio</Link></li>
         <li className="nav-item"><Link to="/contact" activeStyle={active}>Contact</Link></li>
-        <li className="nav-item"><Link to="/" activeStyle={active}>Resume</Link></li>
+        <li className="nav-item"><Link to="/resume" activeStyle={active}>Resume</Link></li>
       </ul>
     );
     return (
@@ -41,20 +41,20 @@ class Header extends React.Component {
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav mr-auto">
       <li className="nav-item active">
-       <IndexLink to="/" className="nav-link" activeStyle={active}>Home<span className="sr-only">(current)</span></IndexLink>
+       <IndexLink  data-toggle="collapse" data-target=".navbar-collapse.in" to="/" className="nav-link" activeStyle={active}>Home<span className="sr-only">(current)</span></IndexLink>
        
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Post</a>
+         <IndexLink data-toggle="collapse" data-target=".navbar-collapse.in" to="/post" className="nav-link" >Post</IndexLink>
       </li>
       <li className="nav-item">
-        <IndexLink to="/portfolio" className="nav-link" >Portfolio</IndexLink>
+        <IndexLink data-toggle="collapse" data-target=".navbar-collapse.in" to="/portfolio" className="nav-link" >Portfolio</IndexLink>
       </li>
       <li className="nav-item">
-         <IndexLink to="/contact" className="nav-link">Contact</IndexLink>
+         <IndexLink data-toggle="collapse" data-target=".navbar-collapse.in" to="/contact" className="nav-link">Contact</IndexLink>
       </li>
       <li className="nav-item">
-        <IndexLink to="/resume" className="nav-link">Resume</IndexLink>
+        <IndexLink data-toggle="collapse" data-target=".navbar-collapse.in" to="/resume" className="nav-link">Resume</IndexLink>
       </li>
     </ul>
    

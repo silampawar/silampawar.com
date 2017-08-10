@@ -10,8 +10,8 @@ export default class HomeRecentWork extends React.Component {
         const imagePath = `./images/recentwork/thumbnil/${card.imgSrc}`;
         const portLink = `/portfolio/${card._id}`;
 
-        return (<div className="col-md-4 col-sm-4 col-xs-4">
-            <div className="card">
+        return (
+          /*  <div className="card">
                 <img className="card-img-top" src={imagePath} alt="Card image cap" />
                 <div className="card-block">
                     <h4 className="card-title">{card.workTitle}</h4>
@@ -24,9 +24,24 @@ export default class HomeRecentWork extends React.Component {
 
                     </small>
                 </div>
+            </div>*/
+        <div className="col-xs-12 col-sm-6 col-md-4">
+        <div className="wrapper">
+            <div className="tile job-bucket">
+                <div className="front">
+                    <div className="contents">
+                        <img src={imagePath}/>
+                        <h3>{card.workTitle}</h3>
+                    </div>
+                </div>
+                <div className="back">
+                    <h3>{card.workTitle}</h3>
+                   <p className="cardDesc">{card.description}</p>
+                   <div className="cardDetail"> <IndexLink to={portLink}>Details</IndexLink></div>
+                </div>
             </div>
-            <div className="midPadding"></div>
-        </div>)
+        </div></div>
+        )
     }
 
     render() {
@@ -38,8 +53,8 @@ export default class HomeRecentWork extends React.Component {
 
             mainDisplay = _.map(this.props.dataList, card => this.renderCard(card))
         }
-        return (<div><div className="container"><div className="row">{mainDisplay}</div></div>
-        </div>);
+        return (<div className="container"><div className="row">{mainDisplay}
+        </div></div>);
     }
 }
 /*

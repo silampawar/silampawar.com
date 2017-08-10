@@ -13,11 +13,11 @@ class Footer extends React.Component {
 				<p className="footer-links">
 					<IndexLink to="/"> Home </IndexLink>
 					/
-					<a href="#"> Post </a>
+					 <IndexLink to="/post">Post</IndexLink>
 					/
 					 <IndexLink to="/portfolio"> Portfolio </IndexLink>
 					/
-					<a href="#"> Contact </a>
+					<IndexLink to="/contact"> Contact </IndexLink>
 					/
 					 <IndexLink to="/resume"> Resume </IndexLink>
 				</p>
