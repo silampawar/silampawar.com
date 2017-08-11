@@ -5,7 +5,9 @@ import { connect } from 'react-redux'
 
 export default class Resume extends React.Component {
 
-
+componentDidMount () {
+  window.scrollTo(0, 0);
+}
   render() {
     return (<div className="paddingTop">
       <div className="container">

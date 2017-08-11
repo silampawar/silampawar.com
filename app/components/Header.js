@@ -10,6 +10,9 @@ class Header extends React.Component {
     event.preventDefault();
     this.props.dispatch(logout());
   }
+    componentDidMount () {
+  window.scrollTo(0, 0);
+}
 
   render() {
     const active = { borderBottomColor: '#3f51b5' };

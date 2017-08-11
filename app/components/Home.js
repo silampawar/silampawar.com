@@ -14,6 +14,8 @@ class Home extends React.Component {
 
   componentDidMount() {
 
+  window.scrollTo(0, 0);
+
     this.props.recentWork();
      this.setState({ RecentWorkList: this.props.RecentWorkList
      });
@@ -30,14 +32,14 @@ class Home extends React.Component {
       <div className="container">
         <Messages messages={this.props.messages} />
         <div className="row pad-top-15">
-          <div className="col-sm-6">
+          <div className="col-md-6 col-sm-12">
             <h1 className="section-title landing-header">Full-Stack Developer and Estimation Consultant</h1>
           </div>
-          <div className="col-sm-6"></div>
+          <div className="col-md-6 col-sm-12"></div>
         </div>
 
         <div className="row">
-          <div className="col-sm-4">
+          <div className="col-md-4 col-sm-12">
             <div className="panel">
               <div className="panel-body">
                 <h3>Full Stack Developer</h3>
@@ -48,7 +50,7 @@ class Home extends React.Component {
               </div>
             </div>
           </div>
-          <div className="col-sm-4">
+          <div className="col-md-4 col-sm-12">
             <div className="panel">
               <div className="panel-body">
                 <h3>Estimation Consultant</h3>
@@ -59,7 +61,7 @@ class Home extends React.Component {
               </div>
             </div>
           </div>
-          <div className="col-sm-4">
+          <div className="col-md-4 col-sm-12">
             <div className="panel">
               <div className="panel-body">
                 <h3>And Much More</h3>

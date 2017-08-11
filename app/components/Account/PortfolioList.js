@@ -9,6 +9,8 @@ class PortfolioList extends React.Component {
 
   componentDidMount() {
 
+  window.scrollTo(0, 0);
+
     this.props.recentWork();
     this.setState({ RecentWorkList: this.props.RecentWorkList });
   }

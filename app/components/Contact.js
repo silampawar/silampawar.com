@@ -17,6 +17,9 @@ class Contact extends React.Component {
     event.preventDefault();
     this.props.dispatch(submitContactForm(this.state.name, this.state.email, this.state.message));
   }
+  componentDidMount () {
+  window.scrollTo(0, 0);
+}
 
   render() {
     return (

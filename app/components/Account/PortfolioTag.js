@@ -17,7 +17,7 @@ export default class PortfolioTag extends React.Component {
                                     <h1 itemprop="name" className="viba-portfolio-entry-title entry-title">{projDetails.workTitle}</h1>
 
                                     <div className="col-sm-8 floatLeft">
-                                      <img width="750" height="385" src= {profileImage} />
+                                      <img className="img-fluid" width="750" height="385" src= {profileImage} />
                                        <div className="midPadding">{projDetails.description}</div>
                                     </div>
                                     <div className="col-sm-4 viba-portfolio-single-content floatRight paddingLeft">

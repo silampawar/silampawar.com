@@ -396,7 +396,7 @@ textarea {
   display: none;
 }
 
-@media only screen and (max-width: 468px) {
+@media only screen and (max-width: 480px) {
   .typewriterMobile {
     display: inline-grid;
   }
@@ -406,10 +406,13 @@ textarea {
     margin: 10px 125px;
     font-weight: 200;
     color: #fff;
+    text-align:center;
   }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 479px) {
  .typewriterMobile h1 {
     margin: 10px 50px;
+    font-size: 45px;
+    text-align:center;
   }
   }
   .typewriterMobile h1 span {
@@ -506,7 +509,7 @@ textarea {
   vertical-align: top;
   margin-bottom: 60px;
 }
-@media only screen and (max-width: 468px) {
+@media only screen and (min-width: 320) and (max-width: 480) {
   .section-title {
   font-size: 40px;
   font-family: "Open Sans", sans-serif;
@@ -527,7 +530,7 @@ textarea {
   position: relative;
   margin: 20px;
 }
-@media only screen and (max-width: 468px) {
+@media only screen and (max-width: 480px) {
   .title-view-more-link {
     float: right;
   }

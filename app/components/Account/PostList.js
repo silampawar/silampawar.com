@@ -8,7 +8,7 @@ import { bindActionCreators } from 'redux';
 class PostList extends React.Component {
 
   componentDidMount() {
-
+ window.scrollTo(0, 0);
     this.props.recentPost();
     this.setState({ RecentPostList: this.props.RecentPostList });
   }
