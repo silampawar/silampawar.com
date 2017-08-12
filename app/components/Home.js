@@ -84,7 +84,7 @@ class Home extends React.Component {
            
         
                
-                  <HomeRecentWork dataList={this.props.RecentWorkList} />
+                  <HomeRecentWork dataList={this.props.RecentWorkList} limit="6"/>
                 
            
           </div>
@@ -101,7 +101,7 @@ class Home extends React.Component {
             <div className="container">
               <div className="row">
                 <div className="card-deck"></div>
-                   <HomeRecentPost postList={this.props.RecentPostList} />
+                   <HomeRecentPost postList={this.props.RecentPostList} limit="6"/>
                 </div>
             </div>
           </div>

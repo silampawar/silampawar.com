@@ -2,6 +2,11 @@ import React from 'react';
 import moment from 'moment';
 
 export default class PortfolioTag extends React.Component {
+
+  componentDidMount() {
+  window.scrollTo(0, 0);
+}
+
    
     render() {
         const projDetails = this.props.portfolioDetails;

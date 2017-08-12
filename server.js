@@ -72,7 +72,7 @@ app.use(function(req, res, next) {
   //rwNew.remove({},()=>console.log('All Work deleted'));
  rwNew.imgSrc = 'img1.jpeg';
    rwNew.mainImageSrc = 'sample.png';
-    rwNew.workTitle = 'SilamPawar.com is live';
+    rwNew.workTitle = 'A polling application';
     rwNew.description = 'This simple little Reaction Timer is a fun little proof of concept to test your reaction speed by timing how long it takes for you to click a button when randomly prompted. This was built in JS/HTML/CSS and was produced to simply recreate a game I had once played before. You can view an online demo over at: <a href= "http://aaronvanston.github.io/Reaction-Timer/">here</a></a>';
     rwNew.urlWebsite = 'www.google.com';
     rwNew.urlGitHub = 'www.github.com';

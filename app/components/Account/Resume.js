@@ -14,6 +14,7 @@ componentDidMount () {
         
           <h2 className="viba-portfolio-entry-title">Hello!</h2>
           <h2 className="viba-portfolio-entry-title">My name is Silam Pawar, I'm a Full Stack Developer and Technical Estimation Consultant from Melbourne, Australia.</h2>
+          <h2 className="viba-portfolio-entry-title"><a href="/resume/Silam_Pawar_7plus.doc" target="_blank">Click here</a> to download my resume.</h2>
         </div>
         
       <section id="cd-timeline" className="cd-container">

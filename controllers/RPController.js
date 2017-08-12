@@ -2,7 +2,7 @@
 var RecentPost = require('../models/RecentPost.js');
 
 function getData(callback) {
-    return RecentPost.find({}, function (err, data) {
+    return RecentPost.find({},null, {sort: {uploadedDate: -1 }},  function (err, data) {
         callback(data);
     });
 }
