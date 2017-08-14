@@ -24,7 +24,7 @@ class Header extends React.Component {
       </div>
        </div>
     );
-    const rightNav = (
+    /*const rightNav = (
       <ul className="navbar-nav mr-auto">
         <li className="nav-item active"><IndexLink to="/" activeStyle={active}>Home</IndexLink></li>
         <li className="nav-item"><Link to="/post" activeStyle={active}>Posts</Link></li>
@@ -32,7 +32,7 @@ class Header extends React.Component {
         <li className="nav-item"><Link to="/contact" activeStyle={active}>Contact</Link></li>
         <li className="nav-item"><Link to="/resume" activeStyle={active}>Resume</Link></li>
       </ul>
-    );
+    );*/
     return (
      <div>
       <nav className="navbar navbar-toggleable-md navbar-inverse fixed-top">
@@ -44,7 +44,7 @@ class Header extends React.Component {
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav mr-auto">
       <li className="nav-item active">
-       <IndexLink  data-toggle="collapse" data-target=".navbar-collapse.in" to="/" className="nav-link" activeStyle={active}>Home<span className="sr-only">(current)</span></IndexLink>
+       <IndexLink  data-toggle="collapse" data-target=".navbar-collapse.in" to="/" className="nav-link">Home<span className="sr-only">(current)</span></IndexLink>
        
       </li>
       <li className="nav-item">

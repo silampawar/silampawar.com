@@ -46,18 +46,12 @@ class Footer extends React.Component {
 
 			<div className="footer-right">
 
-				<p className="footer-company-about">
-					<span>About me</span>
-					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-				</p>
-
+				
 				<div className="footer-icons">
-
 					<a href="#"><i className="fa fa-facebook"></i></a>
 					<a href="#"><i className="fa fa-twitter"></i></a>
-					<a href="#"><i className="fa fa-linkedin"></i></a>
-					<a href="#"><i className="fa fa-github"></i></a>
-
+					<a href="https://www.linkedin.com/in/silam-pawar-82b67114/" target="_blank"><i className="fa fa-linkedin"></i></a>
+					<a href="https://github.com/silampawar" target="_blank"><i className="fa fa-github"></i></a>
 				</div>
 
 			</div>

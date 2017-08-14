@@ -43,9 +43,10 @@ class Home extends React.Component {
             <div className="panel">
               <div className="panel-body">
                 <h3>Full Stack Developer</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                  mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                  mollis euismod. Donec sed odio dui.</p>
+                <p>I am a full stack web developer specialised in both front-end and back-end web development.
+                  Have gained sound knowledge in React JS, Redux, AngularJs, NodeJs, HTML, CSS and Core Java.
+                  Currenty working on React-Redux and Nodejs projects.  
+                </p>
 
               </div>
             </div>
@@ -54,9 +55,10 @@ class Home extends React.Component {
             <div className="panel">
               <div className="panel-body">
                 <h3>Estimation Consultant</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                  mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                  mollis euismod. Donec sed odio dui.</p>
+                <p>Apart from development I have worked as a Technology Estimation Consultant.
+                  I was responsible for responsible for compiling estimates of how much it 
+                  will cost to provide a client or potential client with products or services. 
+                </p>
 
               </div>
             </div>
@@ -65,9 +67,10 @@ class Home extends React.Component {
             <div className="panel">
               <div className="panel-body">
                 <h3>And Much More</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                  mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                  mollis euismod. Donec sed odio dui.</p>
+                <p>Being a Web developer my passion is to learn new technologies and leverage my knowledge.
+                  However, I am more than a developer, I am a full time husband, a moody artist, an 
+                  amature photographer, an admirer of Roger Federer and much more.
+                </p>
 
               </div>
             </div>

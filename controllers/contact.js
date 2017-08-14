@@ -36,7 +36,9 @@ exports.contactPost = function(req, res) {
     from: req.body.name + ' ' + '<'+ req.body.email + '>',
     to: 'silampawar@gmail.com',
     subject: '✔ Contact Form | SilamPawar.com',
-    text: req.body.message
+    text: 'Name: '+req.body.name + ' \n' +
+     'Email Id: '+ req.body.email + '\n'+
+      'Message: '+req.body.message
   };
 
   transporter.sendMail(mailOptions, function(err) {

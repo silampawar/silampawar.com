@@ -152,7 +152,7 @@ app.use(function(req, res) {
       var html = ReactDOM.renderToString(React.createElement(Provider, { store: store },
         React.createElement(Router.RouterContext, renderProps)
       ));
-      res.render('layout', { title:'SilamPawar',
+      res.render('layout', { title:'Silam Pawar',
         html: html,
         initialState: store.getState()
       });
