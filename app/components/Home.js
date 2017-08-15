@@ -77,38 +77,27 @@ class Home extends React.Component {
           </div>
         </div>
         <div className="midPadding"></div>
-        <div className="row">
-          <div className="recentSection" style={{ backgroundColor: "#faf5f5" }}>
+       
+          <div className="recentSection" >
             <div className="section-title">Recent Work
               <small>
                 <IndexLink to="/portfolio" className="title-view-more-link"> - View more</IndexLink>
               </small>
             </div>
-           
-        
-               
-                  <HomeRecentWork dataList={this.props.RecentWorkList} limit="6"/>
-                
-           
-          </div>
+           <HomeRecentWork dataList={this.props.RecentWorkList} limit="6"/>
         </div>
 
 
        
-        <div className="row">
+        
           <div className="recentSection" style={{ backgroundColor: "#fff" }}>
             <div className="section-title">Recent Posts
                     <small><IndexLink to="/post" className="title-view-more-link"> - View more</IndexLink>
               </small>
             </div>
-            <div className="container">
-              <div className="row">
-                <div className="card-deck"></div>
                    <HomeRecentPost postList={this.props.RecentPostList} limit="6"/>
-                </div>
-            </div>
           </div>
-        </div>
+       
 
 <div className="paddingBot"></div>
       </div>

@@ -498,9 +498,10 @@ textarea {
 
 /*Recent View Section*/
 .recentSection {
-  padding-top: 70px;
+  padding-top: 30px;
   /*padding-bottom: 50px;*/
-  width:100%
+  width:100%;
+  border-top: solid lightgrey 1px;
 }
 .section-title {
   font-size: 45px;
@@ -515,7 +516,7 @@ textarea {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   vertical-align: top;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   text-align: center;
 }
 }
@@ -534,14 +535,14 @@ textarea {
 }
 @media only screen and (max-width: 480px) {
   .title-view-more-link {
-    float: right;
+    display:inline-block;
   }
    .section-title {
   font-size: 40px !important;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   vertical-align: top;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   text-align: center;
 }
 }
@@ -627,6 +628,11 @@ textarea {
   font-weight: 100;
   line-height: 1.1;
   color: inherit;
+}
+@media only screen and (max-width:360px){
+  .viba-portfolio-entry-title{
+    margin-left:15px;
+  }
 }
 .viba-portfolio-single-meta,
 .viba-portfolio-single-content .viba-portfolio-single-meta a {

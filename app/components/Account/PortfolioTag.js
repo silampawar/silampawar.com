@@ -33,27 +33,27 @@ export default class PortfolioTag extends React.Component {
                                             </div>
                                             <div className="vp-single-meta viba-portfolio-single-categories">
                                                 <h3>Categories</h3>
-                                                <ul><li><a href="http://aaronvanston.com.au/portfolio-category/websites/" rel="tag">Websites</a></li></ul></div>
+                                                <ul><li><a href="" rel="tag">Websites</a></li></ul></div>
                                             <div className="vp-single-meta viba-portfolio-single-tags">
                                                 <h3>Tags</h3>
-                                                <ul><li><a href="http://aaronvanston.com.au/portfolio-tag/featured/" rel="tag">{projDetails.tags}</a></li>
+                                                <ul><li><a href="" rel="tag">{projDetails.tags}</a></li>
                                                    
                                                 </ul></div>
                                             <div className="viba-portfolio-single-project-link">
-                                                <a href={projDetails.urlWebsite}>View Project</a>
+                                                <a target="_blank" href={projDetails.urlWebsite}>View Project</a>
                                                  <a target="_blank" href={projDetails.urlGithub}>View on Github</a>
                                                 </div>
                                             <div className="viba-portfolio-share-icons footer-icons ">
                                                 <span className="vp-share">Share</span>
                                                 <ul >
                                                     <li>
-                                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Faaronvanston.com.au%2Fportfolio%2Freaction-timer%2F" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600'); return false;">
+                                                        <a href="facebook.com" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600'); return false;">
                                                           <i className="fa fa-facebook"></i>
                                                         </a>
                                                         
                                                     </li>
                                                     <li>
-                                                        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Faaronvanston.com.au%2Fportfolio%2Freaction-timer%2F&amp;text=Reaction%20Timer" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=420,width=550'); return false;">
+                                                        <a href="twitter.com" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=420,width=550'); return false;">
                                                         <i className="fa fa-twitter"></i>
                                                         </a>
                                                     </li>

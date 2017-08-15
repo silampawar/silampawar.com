@@ -41,15 +41,14 @@ class Footer extends React.Component {
 					<i className="fa fa-envelope"></i>
 					<p><a href="mailto:silampawar@gmail.com">silampawar@gmail.com</a></p>
 				</div>
+				
 
 			</div>
 
 			<div className="footer-right">
 
-				
 				<div className="footer-icons">
-					<a href="#"><i className="fa fa-facebook"></i></a>
-					<a href="#"><i className="fa fa-twitter"></i></a>
+					<p>Social Platforms: </p>
 					<a href="https://www.linkedin.com/in/silam-pawar-82b67114/" target="_blank"><i className="fa fa-linkedin"></i></a>
 					<a href="https://github.com/silampawar" target="_blank"><i className="fa fa-github"></i></a>
 				</div>

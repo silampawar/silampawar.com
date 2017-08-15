@@ -45,7 +45,7 @@ export default class HomeRecentPost extends React.Component {
             //mainDisplay = _.map(this.props.postList, card => this.renderCard(card))
 
         }
-        return (<div><div className="container"><div className="row">
+        return (<div className="container"><div className="row">
             <div className="col-md-12 col-sm-12 col-xs-12">
                 <div className="list-group">
                     {mainDisplay}
@@ -53,7 +53,7 @@ export default class HomeRecentPost extends React.Component {
             </div>
         </div>
         </div>
-        </div>);
+        );
     }
 }
 /*
