@@ -24,10 +24,11 @@ componentDidMount () {
 			</div>
 
           <div className="cd-timeline-content">
-            <h2>Title of section 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-           
-            <span className="cd-date">Jan 14</span>
+            <h2>Technology Lead</h2> ANZ Bank (via Infosys ltd)
+            <p>At this current position I am heading multiple teams for implementation of multiple releases
+              and production support activities.
+            </p>
+            <span className="cd-date">Till Date - Nov'15</span>
           </div>
         </div>
 
@@ -37,10 +38,13 @@ componentDidMount () {
           </div>
 
           <div className="cd-timeline-content">
-            <h2>Title of section 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-            
-            <span className="cd-date">Jan 18</span>
+            <h2>Technical Estimation Consultant</h2> ANZ Bank (via Infosys ltd)
+            <p>As an Estimation consultant I was responsible to provide optimal solution to the
+              client's requirement and present corrosponding commertials. It also involved various 
+              artchitect level technical consultations such as New payment platform (NPP) design 
+              and implementation in Internt banking.
+            </p>
+            <span className="cd-date">Oct'15 - Sept'14</span>
           </div>
         </div>
 
@@ -50,10 +54,14 @@ componentDidMount () {
           </div>
 
           <div className="cd-timeline-content">
-            <h2>Title of section 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-            
-            <span className="cd-date">Jan 24</span>
+            <h2>Technology Analyst</h2> ANZ Bank (via Infosys ltd)
+            <p>I was part of the one of the leading bank of Australia and Asia, ANZ Bank Internet 
+              Banking Solution Center at Infosys ltd. I was a part of Development team who was responsible 
+              for delivering the enhancements at regular intervals.<br/>
+              <u>Technologies</u>: 
+                 Javascript, Angular Js 1.x, Core Java, SQL and Webservices
+            </p>
+            <span className="cd-date">Sept'14 - May'12</span>
           </div>
         </div>
 
@@ -63,10 +71,14 @@ componentDidMount () {
           </div>
 
           <div className="cd-timeline-content">
-            <h2>Title of section 4</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-            
-            <span className="cd-date">Feb 14</span>
+            <h2>Senior Software Engineer</h2> Infosys ltd.
+            <p>I was part of Emerson Data Migration project, I was responsible for building a reporting 
+              module for the ETL Application. The Reporting module was designed to report 
+              status of the complete data migration activity.<br/>
+               <u>Technologies</u>: 
+              Core Java, iText and Postgres
+              </p>
+            <span className="cd-date">May'12 - Jun'11</span>
           </div>
         </div>
 
@@ -76,10 +88,13 @@ componentDidMount () {
 			</div>
 
           <div className="cd-timeline-content">
-            <h2>Title of section 5</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-           
-            <span className="cd-date">Feb 18</span>
+            <h2>Software Engineer</h2> Infosys ltd.
+            <p>I was working as a Developer for IBM Cognos BI tool. The team was responsible
+              for providing support and implement enhancements for the client.<br/>
+             <u>Technologies</u>: 
+              Core Java, SQL and Webservices
+            </p>
+            <span className="cd-date">Work Experience | Jun'11 - Dec'09</span>
           </div>
         </div>
 
@@ -89,9 +104,9 @@ componentDidMount () {
 			</div>
 
           <div className="cd-timeline-content">
-            <h2>Final Section</h2>
-            <p>This is the content of the last section</p>
-            <span className="cd-date">Feb 26</span>
+            <h2>Education</h2>
+            <p>I have completed Bacholers of Technology (B.Tech) in Computers from Dr. B.A.T.U. India</p>
+            <span className="cd-date">2005 - 2009</span>
           </div>
         </div>
       </section>
