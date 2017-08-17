@@ -39,10 +39,10 @@ componentDidMount () {
 
           <div className="cd-timeline-content">
             <h2>Technical Estimation Consultant</h2> ANZ Bank (via Infosys ltd)
-            <p>As an Estimation consultant I was responsible to provide optimal solution to the
-              client's requirement and present corrosponding commertials. It also involved various 
-              artchitect level technical consultations such as New payment platform (NPP) design 
-              and implementation in Internt banking.
+            <p>As an Estimation consultant I was responsible to provide ideal solution to the 
+              client's requirement and present corresponding commercials. It also involved 
+              various architect level technical consultations such as New payment platform (NPP) 
+              design and implementation in Internet banking.
             </p>
             <span className="cd-date">Oct'15 - Sept'14</span>
           </div>
@@ -59,7 +59,7 @@ componentDidMount () {
               Banking Solution Center at Infosys ltd. I was a part of Development team who was responsible 
               for delivering the enhancements at regular intervals.<br/>
               <u>Technologies</u>: 
-                 Javascript, Angular Js 1.x, Core Java, SQL and Webservices
+                 JavaScript, Angular Js 1.x, Core Java, SQL and Web services
             </p>
             <span className="cd-date">Sept'14 - May'12</span>
           </div>
@@ -92,7 +92,7 @@ componentDidMount () {
             <p>I was working as a Developer for IBM Cognos BI tool. The team was responsible
               for providing support and implement enhancements for the client.<br/>
              <u>Technologies</u>: 
-              Core Java, SQL and Webservices
+              Core Java, SQL and Web services
             </p>
             <span className="cd-date">Work Experience | Jun'11 - Dec'09</span>
           </div>
