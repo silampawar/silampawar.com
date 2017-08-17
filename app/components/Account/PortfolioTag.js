@@ -47,19 +47,19 @@ export default class PortfolioTag extends React.Component {
                                                 <span className="vp-share">Share</span>
                                                 <ul >
                                                     <li>
-                                                        <a href="facebook.com" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600'); return false;">
-                                                          <i className="fa fa-facebook"></i>
+                                                        <a href="https:\\facebook.com" target="_blank" >
+                                                          <i className="fa fa-facebook" ></i>
                                                         </a>
                                                         
                                                     </li>
                                                     <li>
-                                                        <a href="twitter.com" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=420,width=550'); return false;">
+                                                        <a href="https:\\twitter.com" target="_blank">
                                                         <i className="fa fa-twitter"></i>
                                                         </a>
                                                     </li>
                                                 </ul>
 
-                                            </div></div>
+                                            </div> </div>
 
                                     </div>
                                     <div className="col-sm-12"></div>

@@ -24,11 +24,13 @@ componentDidMount () {
 			</div>
 
           <div className="cd-timeline-content">
+           <div className="bottomBorder">
             <h2>Technology Lead</h2> ANZ Bank (via Infosys ltd)
+            </div>
             <p>At this current position I am heading multiple teams for implementation of multiple releases
               and production support activities.
             </p>
-            <span className="cd-date">Till Date - Nov'15</span>
+            <span className="cd-date">Work Experience | Till Date - Nov'15</span>
           </div>
         </div>
 
@@ -38,13 +40,15 @@ componentDidMount () {
           </div>
 
           <div className="cd-timeline-content">
+             <div className="bottomBorder">
             <h2>Technical Estimation Consultant</h2> ANZ Bank (via Infosys ltd)
+            </div>
             <p>As an Estimation consultant I was responsible to provide ideal solution to the 
               client's requirement and present corresponding commercials. It also involved 
               various architect level technical consultations such as New payment platform (NPP) 
               design and implementation in Internet banking.
             </p>
-            <span className="cd-date">Oct'15 - Sept'14</span>
+            <span className="cd-date">Work Experience | Oct'15 - Sept'14</span>
           </div>
         </div>
 
@@ -54,14 +58,16 @@ componentDidMount () {
           </div>
 
           <div className="cd-timeline-content">
+             <div className="bottomBorder">
             <h2>Technology Analyst</h2> ANZ Bank (via Infosys ltd)
+            </div>
             <p>I was part of the one of the leading bank of Australia and Asia, ANZ Bank Internet 
               Banking Solution Center at Infosys ltd. I was a part of Development team who was responsible 
               for delivering the enhancements at regular intervals.<br/>
               <u>Technologies</u>: 
                  JavaScript, Angular Js 1.x, Core Java, SQL and Web services
             </p>
-            <span className="cd-date">Sept'14 - May'12</span>
+            <span className="cd-date">Work Experience | Sept'14 - May'12</span>
           </div>
         </div>
 
@@ -71,14 +77,16 @@ componentDidMount () {
           </div>
 
           <div className="cd-timeline-content">
+             <div className="bottomBorder">
             <h2>Senior Software Engineer</h2> Infosys ltd.
+            </div>
             <p>I was part of Emerson Data Migration project, I was responsible for building a reporting 
               module for the ETL Application. The Reporting module was designed to report 
               status of the complete data migration activity.<br/>
                <u>Technologies</u>: 
               Core Java, iText and Postgres
               </p>
-            <span className="cd-date">May'12 - Jun'11</span>
+            <span className="cd-date">Work Experience | May'12 - Jun'11</span>
           </div>
         </div>
 
@@ -88,7 +96,9 @@ componentDidMount () {
 			</div>
 
           <div className="cd-timeline-content">
+             <div className="bottomBorder">
             <h2>Software Engineer</h2> Infosys ltd.
+            </div>
             <p>I was working as a Developer for IBM Cognos BI tool. The team was responsible
               for providing support and implement enhancements for the client.<br/>
              <u>Technologies</u>: 
@@ -104,7 +114,9 @@ componentDidMount () {
 			</div>
 
           <div className="cd-timeline-content">
+             <div className="bottomBorder">
             <h2>Education</h2>
+            </div>
             <p>I have completed Bacholers of Technology (B.Tech) in Computers from Dr. B.A.T.U. India</p>
             <span className="cd-date">2005 - 2009</span>
           </div>

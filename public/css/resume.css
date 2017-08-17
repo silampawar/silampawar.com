@@ -238,8 +238,8 @@ Main components
   color: #303e49;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 15px;
+
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
@@ -275,12 +275,13 @@ Main components
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-size: 1.25rem;
+    font-weight: 500
   }
   .cd-timeline-content p {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 15px;
+  
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 14px;
@@ -461,4 +462,11 @@ Main components
     -o-transform: translateX(0);
     transform: translateX(0);
   }
+}
+.bottomBorder{
+  border-bottom: solid 1px lightgrey;
+}
+.bottomBorder h2{
+  font-weight: 500;
+  font-size: 20px;
 }
