@@ -34,14 +34,14 @@ class Footer extends React.Component {
 
 				<div>
 					<i className="fa fa-phone"></i>
-					<p>+1 555 123456</p>
+					<p>0470 322 579</p>
 				</div>
 
 				<div>
 					<i className="fa fa-envelope"></i>
 					<p><a href="mailto:silampawar@gmail.com">silampawar@gmail.com</a></p>
 				</div>
-				
+
 
 			</div>
 
