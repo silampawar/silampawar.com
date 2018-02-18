@@ -41,7 +41,7 @@ export default class PortfolioTag extends React.Component {
                                                 </ul></div>
                                             <div className="viba-portfolio-single-project-link">
                                                 <a target="_blank" href={projDetails.urlWebsite}>View Project</a>
-                                                 <a target="_blank" href={projDetails.urlGithub}>View on Github</a>
+                                                 <a target="_blank" href={projDetails.urlGitHub}>View on Github</a>
                                                 </div>
                                             <div className="viba-portfolio-share-icons footer-icons ">
                                                 <span className="vp-share">Share</span>

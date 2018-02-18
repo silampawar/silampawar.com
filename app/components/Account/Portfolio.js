@@ -9,7 +9,7 @@ import PortfolioTag from './PortfolioTag';
 
 
 class Portfolio extends React.Component {
-
+ 
     componentDidMount() {
         this.props.recentWorkDetails(this.props.params.id);
     }

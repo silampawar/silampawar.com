@@ -65,25 +65,26 @@ app.use(function(req, res, next) {
 
 
   var rwNew = RecentWork();
-//  RecentWork.findOne({ workTitle: 'Sample One' }).remove().exec();
-//  RecentWork.findOne({ workTitle: 'New Project One' }).remove().exec();
+/*
+  RecentWork.findOne({ workTitle: 'ToDo Application' }).remove().exec();
+  RecentWork.findOne({ workTitle: 'SilamPawar.com is live' }).remove().exec();
 
 
   //rwNew.remove({},()=>console.log('All Work deleted'));
- rwNew.imgSrc = 'img1.jpeg';
-   rwNew.mainImageSrc = 'sample.png';
-    rwNew.workTitle = 'A polling application';
-    rwNew.description = 'This simple little Reaction Timer is a fun little proof of concept to test your reaction speed by timing how long it takes for you to click a button when randomly prompted. This was built in JS/HTML/CSS and was produced to simply recreate a game I had once played before. You can view an online demo over at: <a href= "http://aaronvanston.github.io/Reaction-Timer/">here</a></a>';
-    rwNew.urlWebsite = 'www.google.com';
-    rwNew.urlGitHub = 'www.github.com';
+ rwNew.imgSrc = 'todo.png';
+   rwNew.mainImageSrc = 'todo.png';
+    rwNew.workTitle = 'To-Do Application';
+    rwNew.description = 'This application let user add, update status and delete items from the list. This is client only application. It is created using React, Redux and Bootstrap. It uses "localStorage" to store user current todo list and their corresponding status.';
+    rwNew.urlWebsite = 'https://silamtodo.herokuapp.com/';
+    rwNew.urlGitHub = 'https://github.com/silampawar/ToDoApp';
  //   rwNew.url="https://medium.com/the-node-js-collection/node-js-performance-monitoring-with-prometheus-c3d50c2d5608"
    // rwNew.postTitle = "Node.js Performance Monitoring with Prometheus";
     rwNew.DEL_FLAG = 'N';
-     rwNew.tags = 'Node JS, React JS';
+     rwNew.tags = 'Node JS, React JS and Bootstrap';
      rwNew.uploadedDate = new Date();
 rwNew.save();
 
-  
+*/
 
 
   req.isAuthenticated = function() {

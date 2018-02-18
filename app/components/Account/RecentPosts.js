@@ -6,14 +6,14 @@ import { recentWorkDetails } from '../../actions/recentWork';
 import { bindActionCreators } from 'redux';
 import { browserHistory } from 'react-router';
 import PortfolioTag from './PortfolioTag';
-
+ 
 
 class Portfolio extends React.Component {
 
     componentDidMount() {
        // this.props.recent(this.props.params.id);
     }
-
+ 
     renderPortfolio(portfolio) {
         return (
                 <PortfolioTag portfolioDetails={portfolio}/>
