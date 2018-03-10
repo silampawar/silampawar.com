@@ -43,9 +43,9 @@ class Home extends React.Component {
             <div className="panel">
               <div className="panel-body">
                 <h3>Full Stack Developer</h3>
-                <p>I am a full stack web developer specialised in both front-end and back-end web development.
-                  Have gained sound knowledge in React JS, Redux, AngularJs, NodeJs, HTML, CSS and Core Java.
-                  Currenty working on React-Redux and Nodejs projects.  
+                <p>I am a full stack web developer specialized in both front-end and back-end web development.
+                  Have gained sound knowledge in React JS, Redux, NodeJs and Core Java.
+                  Currently working on React-Redux and Nodejs projects.  
                 </p>
 
               </div>
@@ -55,11 +55,9 @@ class Home extends React.Component {
             <div className="panel">
               <div className="panel-body">
                 <h3>Estimation Consultant</h3>
-                <p>Apart from development I have worked as a Technology Estimation Consultant.
-                  I was responsible for responsible for compiling estimates of how much it 
-                  will cost to provide a client or potential client with products or services. 
-                </p>
-
+                <p>Apart from development, I am also working as a Project Estimation Consultant.
+                  I am responsible for providing solutions and compiling estimates of the cost and effort for the offered services.
+                  </p><br/>
               </div>
             </div>
           </div>
@@ -68,8 +66,8 @@ class Home extends React.Component {
               <div className="panel-body">
                 <h3>And Much More</h3>
                 <p>Being a Web developer my passion is to learn new technologies and leverage my knowledge.
-                  However, I am more than a developer, I am a full time husband, a moody artist, an 
-                  amature photographer, an admirer of Roger Federer and much more.
+                  However, I am more than that, I am a full-time husband, a moody artist, an 
+                  amateur photographer, an admirer of Roger Federer and much more.
                 </p>
 
               </div>
