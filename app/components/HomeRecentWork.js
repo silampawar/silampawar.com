@@ -48,7 +48,7 @@ export default class HomeRecentWork extends React.Component {
                  </div></div>*/
 
 
-<div className="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-lg-3">
+<div className="col-xs-12 col-sm-6 col-md-4">
       <div className="fancy-cards">
             <div className="fancy-card">
                 <div className="top" style={divStyle}>
