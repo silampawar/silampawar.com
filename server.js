@@ -21,7 +21,7 @@ var favicon = require('serve-favicon');
 var rwController = require('./controllers/RWController');
 var rpController = require('./controllers/RPController');
 // Load environment variables from .env file
-dotenv.load();
+//dotenv.load();
 
 // ES6 Transpiler
 require('babel-core/register');
@@ -65,11 +65,15 @@ app.use(function(req, res, next) {
 
 
   var rwNew = RecentWork();
-/*
-  RecentWork.findOne({ workTitle: 'ToDo Application' }).remove().exec();
+
+  RecentWork.findOne({ workTitle: 'A polling application' }).remove().exec();
   RecentWork.findOne({ workTitle: 'SilamPawar.com is live' }).remove().exec();
+  RecentWork.findOneAndUpdate({ workTitle: 'An Authentication Application' },
+   { description: 'This is an authentication application which is connected with NodeJS APIs developed by me and hosted on Heroku app. This app allows a user to Signup with email id and password. It uses JWT authentication mechanism to validate a user. Also, feature page is protected from unauthorized access. The server is developed in NodeJS and client is in ReactJS.' }).exec();
+   RecentWork.findOneAndUpdate({ workTitle: 'To-Do Application' },
+   { description: 'This application lets a user add, update status and delete items from the list. This is client only application. It is created using React, Redux, and Bootstrap. It uses "localStorage" to store user current todo list and their corresponding status.' }).exec();
 
-
+   /*
   //rwNew.remove({},()=>console.log('All Work deleted'));
  rwNew.imgSrc = 'todo.png';
    rwNew.mainImageSrc = 'todo.png';
