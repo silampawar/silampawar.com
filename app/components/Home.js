@@ -32,20 +32,19 @@ class Home extends React.Component {
       <div className="container">
         <Messages messages={this.props.messages} />
         <div className="row pad-top-15">
-          <div className="col-md-6 col-sm-12">
-            <h1 className="section-title landing-header">Full-Stack Developer and Estimation Consultant</h1>
+          <div className="col-md-12 col-sm-12">
+            <h1 className="section-title landing-header">A React and REST services developer and Solution Designer</h1>
           </div>
-          <div className="col-md-6 col-sm-12"></div>
+          
         </div>
 
         <div className="row">
           <div className="col-md-4 col-sm-12">
             <div className="panel">
               <div className="panel-body">
-                <h3>Full Stack Developer</h3>
+                <h3>React + Redux and Spring Boot Developer</h3>
                 <p>I am a full stack web developer specialized in both front-end and back-end web development.
-                  Have gained sound knowledge in React JS, Redux, NodeJs and Core Java.
-                  Currently working on React-Redux and Nodejs projects.  
+                  Have gained sound knowledge in React JS, Redux and  Spring Boot REST services.
                 </p>
 
               </div>
@@ -54,8 +53,8 @@ class Home extends React.Component {
           <div className="col-md-4 col-sm-12">
             <div className="panel">
               <div className="panel-body">
-                <h3>Estimation Consultant</h3>
-                <p>Apart from development, I am also working as a Project Estimation Consultant.
+                <h3>Solution Designer</h3>
+                <p>Apart from development, I am also working as a Solution Designer.
                   I am responsible for providing solutions and compiling estimates of the cost and effort for the offered services.
                   </p><br/>
               </div>
@@ -66,8 +65,7 @@ class Home extends React.Component {
               <div className="panel-body">
                 <h3>And Much More</h3>
                 <p>Being a Web developer my passion is to learn new technologies and leverage my knowledge.
-                  However, I am more than that, I am a full-time husband, a moody artist, an 
-                  amateur photographer, an admirer of Roger Federer and much more.
+                  However, I am more than that, I am a full-time husband, a moody artist, an admirer of Roger Federer and much more.
                 </p>
 
               </div>

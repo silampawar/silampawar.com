@@ -373,7 +373,7 @@ textarea {
 /* DEMO-SPECIFIC STYLES */
 
 .typewriter {
-  width: 539px;
+ width: 539px;
   align-self: center;
   padding-bottom: 50px;
 }
@@ -422,24 +422,25 @@ textarea {
   }
   .typewriterMobile .lower {
   font-size: 17px;
-  margin: 10px 50px;
+ /* margin: 10px 50px;*/
   font-weight: 200;
   color: #fff;
   font-family: monospace;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
 
-  border-right: .15em solid white;
+  /*border-right: .15em solid white;*/
   /* The typwriter cursor */
 
   white-space: nowrap;
   /* Keeps the content on a single line */
 
-  margin: 0 auto;
+  text-align:center;
+  /*margin-left: 70px;*/
   /* Gives that scrolling effect as the typing happens */
   /* letter-spacing: .15em; /* Adjust as needed */
 
-  animation: typing 5s steps(30, end), blink-caret 1s step-end infinite;
+  /*animation: typing 5s steps(30, end), blink-caret 1s step-end infinite;*/
 }
 
 

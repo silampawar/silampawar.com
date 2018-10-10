@@ -13,7 +13,7 @@ componentDidMount () {
       <div className="container">
 
           <h2 className="viba-portfolio-entry-title">Hello!</h2>
-          <h2 className="viba-portfolio-entry-title">My name is Silam Pawar, I'm a Full Stack Developer and Technical Estimation Consultant from Melbourne, Australia.</h2>
+          <h2 className="viba-portfolio-entry-title">My name is Silam Pawar, I'm a Developer and Solution designer from Melbourne, Australia.</h2>
           <h2 className="viba-portfolio-entry-title"><a href="/resume/Silam_Pawar_Resume.docx" target="_blank">Click here</a> to download my resume.</h2>
         </div>
 
@@ -41,9 +41,9 @@ componentDidMount () {
 
           <div className="cd-timeline-content">
              <div className="bottomBorder">
-            <h2>Technical Estimation Consultant</h2> ANZ Bank (via Infosys ltd)
+            <h2>Solution desginer</h2> ANZ Bank (via Infosys ltd)
             </div>
-            <p>As an Estimation consultant I was responsible to provide ideal solution to the
+            <p>As a Solution Designer I was responsible to provide ideal solution to the
               client's requirement and present corresponding commercials. It also involved
               various architect level technical consultations such as New payment platform (NPP)
               design and implementation in Internet banking.
