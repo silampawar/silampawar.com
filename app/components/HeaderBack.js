@@ -14,7 +14,7 @@ export default class HeaderBack extends React.Component {
 
          <div className="typewriterMobile">
           <h1>Silam <span>Pawar</span></h1>
-          <span className="lower">React + Redux, <br/> Spring Boot REST Services, <br/>Solution Designer</span>
+          <span className="lower">React + Redux, <br/> Spring Boot REST Services <br/>and Solution Designer</span>
           <div className="midPadding"></div>
         </div>
       </div>
